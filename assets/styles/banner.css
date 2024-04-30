@@ -1,0 +1,100 @@
+.banner{
+    position: relative;
+    margin-block: 20px;
+    padding-block: 104px 54px;
+    background-image: url('../images/Group\ 126695.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-inline: 30px;
+}
+.banner__container{
+    position: relative;
+    z-index: 10;
+}
+.banner::after{
+    content: '';
+    inset: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--headerBackground);
+    border-radius: 1845px;
+    opacity: 0.3;
+    filter: blur(100px);
+}
+.banner__container,.banner__content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.banner__content{
+    /* max-width: 672px; */
+    margin-bottom: 34px;
+}
+.banner__content h1,p{
+    text-align: center;
+}
+
+.banner__detail{
+    margin-top: 7px;
+    max-width: 530px;
+}
+.banner__mid{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.banner__search{
+    width: 100%;
+    position: relative;
+}
+.banner__search svg,.banner__search .button{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner__search svg{
+    position: absolute;
+    left: 22px;
+    min-width: 20px;
+    min-height: 20px;
+    cursor: pointer;
+}
+.banner__search .button{
+    position: absolute;
+    right: 6px;
+}
+.banner__input{
+    min-height: 64px;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    padding: 6px 6px 6px 66px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.02), 0px 2px 4px 0px rgba(0, 0, 0, 0.02);
+    border: none;
+    font-size: 14px;
+}
+
+.banner__input::placeholder{
+    color: var(--inputPlaceholder);
+    font-size: 14px;
+}
+.banner__upload{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.banner__upload>svg{
+    min-width: 20px;
+    min-height: 22px;
+}
+
+.banner__upload .order{
+    margin-left: 6px;
+    color: var(--inputPlaceholder);
+    font-size: 14px;
+    font-weight: 500;
+}

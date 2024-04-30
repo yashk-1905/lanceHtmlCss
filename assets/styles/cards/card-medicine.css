@@ -1,0 +1,39 @@
+.card-medicine{
+    border-radius: 10px;
+}
+.card-medicine .card-link{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 264px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000;
+    height: 100%;
+    transition: all 0.4s ease-in-out;
+}
+.card-medicine .card-link img{
+    margin-right: 10px;
+}
+.card-medicine .card-link>svg{
+    margin-left: auto;
+}
+
+.card-medicine:first-child{
+    background-color: var(--cardb1);
+}
+.card-medicine:nth-child(2){
+    background-color: var(--cardb2);
+}
+.card-medicine:nth-child(3){
+    background-color: var(--cardb3);
+}
+.card-medicine:last-child{
+    background-color: var(--cardb4);
+}
+
+.card-medicine .card-link:hover{
+    background-color: antiquewhite;
+}

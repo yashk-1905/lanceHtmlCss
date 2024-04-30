@@ -1,0 +1,78 @@
+.card-sell{
+    background-color: #FFF;
+    position: relative;
+    padding: 20px 12px 12px;
+    display: grid;
+    gap: 12px;
+}
+.card-sell .discount{
+    position: absolute;
+    left: -8px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.card-sell .discount svg{
+    min-width: 60px;
+    min-height: 22px;
+}
+.card-sell .discount span{
+    margin-top: -18px;
+    margin-left: 6px;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card-sell .like{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    cursor: pointer;
+}
+.card-sell .like svg path{
+    transition: all 0.4s ease-in-out;
+}
+.card-sell .like svg:hover path{
+    fill: red;
+}
+.card-sell p{
+    font-size: 13px;
+    color: #000;
+    opacity: 1;
+    font-weight: 600;
+    line-height: 1.53; 
+    text-align: left;
+}
+
+.card-sell img{
+    justify-self: center;
+}
+
+.card-sell .card__price{
+    color: #000;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.11
+}
+
+.card-sell .card__price--old{
+    margin-left: 9px;
+    /* text-decoration: line-through; */
+    position: relative;
+    padding-inline: 2px;
+    opacity: 0.8;
+}
+
+.card-sell .card__price--old::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: #000;
+}

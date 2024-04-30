@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="./assets/styles/style.css">
+    <link rel="stylesheet"
+        href="./assets/styles/slick/slick.css">
+</head>
+
+<body>
+    <header class="banner">
+        <div class="container banner__container">
+            <div class="banner__content">
+                <h1 class="banner__heading">Order
+                    Medicines and more..</h1>
+                <p class="banner__detail">Forem
+                    ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                    Nunc vulputate libero et velit
+                    interdum.</p>
+            </div>
+            <div class="banner__mid">
+                <div class="banner__search">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20"
+                        viewBox="0 0 20 20"
+                        fill="none">
+                        <g
+                            clip-path="url(#clip0_3_21894)">
+                            <path
+                                d="M19.2863 19.2853L14.2863 14.2853M8.57199 16.4282C10.6558 16.4282 12.6543 15.6004 14.1278 14.1269C15.6013 12.6534 16.4291 10.6549 16.4291 8.57101C16.4291 6.48717 15.6013 4.48867 14.1278 3.01517C12.6543 1.54167 10.6558 0.713867 8.57199 0.713867C6.48814 0.713867 4.48965 1.54167 3.01615 3.01517C1.54265 4.48867 0.714844 6.48717 0.714844 8.57101C0.714844 10.6549 1.54265 12.6534 3.01615 14.1269C4.48965 15.6004 6.48814 16.4282 8.57199 16.4282Z"
+                                stroke="#90A4AE"
+                                stroke-width="2.28571"
+                                stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath
+                                id="clip0_3_21894">
+                                <rect width="20"
+                                    height="20"
+                                    fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <input class="banner__input"
+                        type="text"
+                        placeholder="Search for medicine and health products">
+                    <a href="#Search"
+                        class="button --primary">Search</a>
+                </div>
+                <div class="banner__upload">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                            d="M15 16H9C8.73478 16 8.48043 16.1054 8.29289 16.2929C8.10536 16.4804 8 16.7348 8 17C8 17.2652 8.10536 17.5196 8.29289 17.7071C8.48043 17.8946 8.73478 18 9 18H15C15.2652 18 15.5196 17.8946 15.7071 17.7071C15.8946 17.5196 16 17.2652 16 17C16 16.7348 15.8946 16.4804 15.7071 16.2929C15.5196 16.1054 15.2652 16 15 16Z"
+                            fill="#90A4AE" />
+                        <path
+                            d="M9 14H12C12.2652 14 12.5196 13.8946 12.7071 13.7071C12.8946 13.5196 13 13.2652 13 13C13 12.7348 12.8946 12.4804 12.7071 12.2929C12.5196 12.1054 12.2652 12 12 12H9C8.73478 12 8.48043 12.1054 8.29289 12.2929C8.10536 12.4804 8 12.7348 8 13C8 13.2652 8.10536 13.5196 8.29289 13.7071C8.48043 13.8946 8.73478 14 9 14Z"
+                            fill="#90A4AE" />
+                        <path
+                            d="M19.74 8.33L14.3 2.33C14.2065 2.2264 14.0924 2.14353 13.9649 2.08669C13.8375 2.02986 13.6995 2.00033 13.56 2H6.56C6.22775 1.99603 5.89797 2.05756 5.5895 2.18105C5.28103 2.30455 4.9999 2.4876 4.76218 2.71975C4.52446 2.9519 4.33479 3.22861 4.20402 3.53406C4.07324 3.83952 4.00392 4.16775 4 4.5V19.5C4.00392 19.8322 4.07324 20.1605 4.20402 20.4659C4.33479 20.7714 4.52446 21.0481 4.76218 21.2802C4.9999 21.5124 5.28103 21.6954 5.5895 21.8189C5.89797 21.9424 6.22775 22.004 6.56 22H17.44C17.7723 22.004 18.102 21.9424 18.4105 21.8189C18.719 21.6954 19.0001 21.5124 19.2378 21.2802C19.4755 21.0481 19.6652 20.7714 19.796 20.4659C19.9268 20.1605 19.9961 19.8322 20 19.5V9C19.9994 8.75216 19.9067 8.51339 19.74 8.33ZM14 5L16.74 8H14.74C14.6353 7.99367 14.5329 7.96656 14.4387 7.92023C14.3446 7.8739 14.2607 7.80929 14.1918 7.73016C14.1229 7.65103 14.0704 7.55898 14.0375 7.45937C14.0046 7.35976 13.9918 7.25459 14 7.15V5ZM17.44 20H6.56C6.49037 20.004 6.42063 19.9943 6.35477 19.9714C6.28892 19.9484 6.22824 19.9127 6.17621 19.8662C6.12419 19.8198 6.08184 19.7635 6.0516 19.7007C6.02137 19.6378 6.00383 19.5696 6 19.5V4.5C6.00383 4.43036 6.02137 4.36216 6.0516 4.29931C6.08184 4.23647 6.12419 4.1802 6.17621 4.13375C6.22824 4.0873 6.28892 4.05158 6.35477 4.02863C6.42063 4.00567 6.49037 3.99594 6.56 4H12V7.15C11.9839 7.88662 12.2598 8.59972 12.7675 9.13367C13.2752 9.66761 13.9735 9.97905 14.71 10H18V19.5C17.9962 19.5696 17.9786 19.6378 17.9484 19.7007C17.9182 19.7635 17.8758 19.8198 17.8238 19.8662C17.7718 19.9127 17.7111 19.9484 17.6452 19.9714C17.5794 19.9943 17.5096 20.004 17.44 20Z"
+                            fill="#90A4AE" />
+                    </svg>
+                    <span class="order">Order with
+                        spanrescription.</span>
+                    <a href="#upload"
+                        class="button --upload">
+                        <span>upload now</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z"
+                                fill="#15A9A0" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="medicine">
+        <div
+            class="container medicine__container">
+            <div class="medicine__cards">
+                <div class="card card-medicine">
+                    <a href="#card-medicine"
+                        class="card-link">
+                        <img src="./assets/images/card-medicine-1.svg"
+                            alt="med-icon"><span>Medicines</span><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            viewBox="0 0 20 20"
+                            fill="none">
+                            <path
+                                d="M7.1499 13.825L10.9749 10L7.1499 6.175L8.33324 5L13.3332 10L8.33324 15L7.1499 13.825Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="card card-medicine">
+                    <a href="#card-medicine"
+                        class="card-link">
+                        <img src="./assets/images/card-medicine-2.svg"
+                            alt="med-icon">
+                        <span>Lab tests</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            viewBox="0 0 20 20"
+                            fill="none">
+                            <path
+                                d="M7.1499 13.825L10.9749 10L7.1499 6.175L8.33324 5L13.3332 10L8.33324 15L7.1499 13.825Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="card card-medicine">
+                    <a href="#card-medicine"
+                        class="card-link">
+                        <img src="./assets/images/card-medicine-3.svg"
+                            alt="med-icon">
+                        <span>Health
+                            products</span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            viewBox="0 0 20 20"
+                            fill="none">
+                            <path
+                                d="M7.1499 13.825L10.9749 10L7.1499 6.175L8.33324 5L13.3332 10L8.33324 15L7.1499 13.825Z"
+                                fill="black" />
+                        </svg>
+
+                    </a>
+                </div>
+                <div class="card card-medicine">
+                    <a href="#card-medicine"
+                        class="card-link">
+                        <img src="./assets/images/card-medicine-4.svg"
+                            alt="med-icon"><span>Upload
+                            Prescription</span><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="20"
+                            viewBox="0 0 20 20"
+                            fill="none">
+                            <path
+                                d="M7.1499 13.825L10.9749 10L7.1499 6.175L8.33324 5L13.3332 10L8.33324 15L7.1499 13.825Z"
+                                fill="black" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="media-slider">
+        <div class="media__container container">
+            <div class="media__slider">
+                <div class="media__card"><img
+                        src="./assets/images/media-1.svg"
+                        alt="media"></div>
+                <div class="media__card"><img
+                        src="./assets/images/media-2.svg"
+                        alt="media"></div>
+                <div class="media__card"><img
+                        src="./assets/images/media-1.svg"
+                        alt="media"></div>
+                <div class="media__card"><img
+                        src="./assets/images/media-2.svg"
+                        alt="media"></div>
+            </div>
+        </div>
+    </section>
+    <section class="sell">
+        <div class="container sell__container">
+            <div class="top__head">
+                <h3 class="sell__heading">
+                    Top selling
+                </h3>
+                <a href="#viewAll"
+                    class="button --view">View
+                    all</a>
+            </div>
+            <div class="sell__cards">
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+    </section>
+    <section class="prescription">
+        <div
+            class="container prescription__container">
+            <div class="prescription__data">
+                <div
+                    class="prescription__content">
+                    <h2
+                        class="prescription__heading">
+                        Upload your Doctor’s
+                        Prescription
+                    </h2>
+                    <p class="prescription__para">
+                        Horem ipsum dolor sit
+                        amet, consectetur
+                        adipiscing elit.
+                    </p>
+                </div>
+                <div class="prescription__right">
+                    <div
+                        class="prescription__step --next">
+                        <div class="step-badge">
+                            step 1
+                        </div>
+                        <div class="class-next">
+                            <svg width="133"
+                                height="133"
+                                viewBox="0 0 133 133"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M132.5 55H127C116.507 55 108 46.4934 108 36V20C108 9.50659 99.4934 1 89 1H20C9.50659 1 1 9.50659 1 20V113C1 123.493 9.50659 132 20 132H52"
+                                    stroke="#0D6AAB"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+
+                        <img src="./assets/images/prescription1.svg"
+                            alt="upload-prescription">
+                    </div>
+
+                    <div
+                        class="prescription__step --next">
+                        <div class="step-badge">
+                            step 2
+                        </div>
+                        <div class="class-next">
+                            <svg width="133"
+                                height="133"
+                                viewBox="0 0 133 133"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M132.5 55H127C116.507 55 108 46.4934 108 36V20C108 9.50659 99.4934 1 89 1H20C9.50659 1 1 9.50659 1 20V113C1 123.493 9.50659 132 20 132H52"
+                                    stroke="#0D6AAB"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                        <img src="./assets/images/prescription2.svg"
+                            alt="products added">
+                    </div>
+                    <div
+                        class="prescription__step --last">
+                        <div class="step-badge">
+                            step 3
+                        </div>
+                        <div class="class-last">
+                            <svg width="109"
+                                height="133"
+                                viewBox="0 0 109 133"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M52 132H20C9.50659 132 1 123.493 1 113V20C1 9.50659 9.50659 1 20 1H89C99.4934 1 108 9.50659 108 20V55"
+                                    stroke="#0D6AAB"
+                                    stroke-width="2" />
+                            </svg>
+                        </div>
+                        <img src="./assets/images/prescription3.svg"
+                            alt="placeOrder">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sell --packages">
+        <div class="container sell__container">
+            <div class="top__head">
+                <h3 class="sell__heading">
+                    Explore packages
+                </h3>
+                <a href="#viewAll"
+                    class="button --view">View
+                    all</a>
+            </div>
+            <div class="sell__cards">
+                <div class="card card-package">
+                    <img src="./assets/images/cardPackage1.svg"
+                        alt="image-service">
+                    <p class="card-heading">Health
+                        Checkups</p>
+                </div>
+                <div class="card card-package">
+                    <img src="./assets/images/cardPackage2.svg"
+                        alt="image-service">
+                    <p class="card-heading">Heart
+                        health tests</p>
+                </div>
+                <div class="card card-package">
+                    <img src="./assets/images/cardPackage3.svg"
+                        alt="image-service">
+                    <p class="card-heading">Liver
+                        health tests</p>
+                </div>
+                <div class="card card-package">
+                    <img src="./assets/images/cardPackage4.svg"
+                        alt="image-service">
+                    <p class="card-heading">Kids
+                        health tests</p>
+                </div>
+            </div>
+    </section>
+    <section class="sell --popular">
+        <div class="container sell__container">
+            <div class="top__head">
+                <h3 class="sell__heading">
+                    Most popular
+                </h3>
+                <a href="#viewAll"
+                    class="button --view">View
+                    all</a>
+            </div>
+            <div class="sell__cards">
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+                <div class="card card-sell">
+                    <div class="discount">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="60" height="21"
+                            viewBox="0 0 60 21"
+                            fill="none">
+                            <path
+                                d="M4.90062 0C-0.928474 -0.000277355 -0.229141 12.4291 0.429765 20.6675C1.15628 19.5641 3.4087 18.7806 4.90062 18.4491L55.0136 17.5765L60 8.35169L55.0136 0H4.90062Z"
+                                fill="#F26522" />
+                        </svg>
+                        <span>75% off</span>
+                    </div>
+                    <div class="like">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24"
+                            viewBox="0 0 24 24"
+                            fill="none">
+                            <path
+                                d="M11.9999 20.9995C11.8683 21.0003 11.7378 20.9751 11.616 20.9253C11.4941 20.8755 11.3833 20.8022 11.2899 20.7095L3.51987 12.9295C2.54523 11.9447 1.99854 10.6151 1.99854 9.22953C1.99854 7.84396 2.54523 6.51435 3.51987 5.52953C4.50213 4.55004 5.8327 4 7.21987 4C8.60704 4 9.93761 4.55004 10.9199 5.52953L11.9999 6.60953L13.0799 5.52953C14.0621 4.55004 15.3927 4 16.7799 4C18.167 4 19.4976 4.55004 20.4799 5.52953C21.4545 6.51435 22.0012 7.84396 22.0012 9.22953C22.0012 10.6151 21.4545 11.9447 20.4799 12.9295L12.7099 20.7095C12.6164 20.8022 12.5056 20.8755 12.3838 20.9253C12.2619 20.9751 12.1315 21.0003 11.9999 20.9995ZM7.21987 5.99953C6.79655 5.99761 6.37705 6.07971 5.98568 6.24106C5.59431 6.40242 5.23884 6.63982 4.93987 6.93953C4.33593 7.54665 3.99691 8.36818 3.99691 9.22453C3.99691 10.0809 4.33593 10.9024 4.93987 11.5095L11.9999 18.5795L19.0599 11.5095C19.6638 10.9024 20.0028 10.0809 20.0028 9.22453C20.0028 8.36818 19.6638 7.54665 19.0599 6.93953C18.4435 6.35724 17.6278 6.03282 16.7799 6.03282C15.932 6.03282 15.1162 6.35724 14.4999 6.93953L12.7099 8.73953C12.6169 8.83326 12.5063 8.90765 12.3844 8.95842C12.2626 9.00919 12.1319 9.03533 11.9999 9.03533C11.8679 9.03533 11.7372 9.00919 11.6153 8.95842C11.4934 8.90765 11.3828 8.83326 11.2899 8.73953L9.49987 6.93953C9.2009 6.63982 8.84544 6.40242 8.45406 6.24106C8.06269 6.07971 7.6432 5.99761 7.21987 5.99953Z"
+                                fill="#90A4AE" />
+                        </svg>
+                    </div>
+                    <img src="./assets/images/sellCard1.svg"
+                        alt="Product">
+                    <p>
+                        Protinex Mother's
+                        Chocolate Flavour
+                        Nutritional Drink Powder
+                    </p>
+                    <div class="card__price">
+                        <span
+                            class="card__price--new">₹646</span>
+                        <span
+                            class="card__price--old">₹999</span>
+                    </div>
+                    <button
+                        class="button --primary">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+    </section>
+
+    <!-- ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// -->
+
+    <section class="search">
+        
+    </section>
+
+    <!-- ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// -->
+    <!-- ////////////////////////////////////////// -->
+
+    <!-- SLICK SLIDER SCRIPT-->
+    <script type="text/javascript"
+        src="./assets/jquery/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+        src="./assets/jquery/jquery-1.2.1.min.js"></script>
+    <!-- SLICK -->
+    <script
+        src="./assets/js/slick.min.js"></script>
+
+    <script>
+        $(".media__slider").slick({
+            slidesToShow: 2.5,
+            infinite: true,
+            slidesToScroll: 1,
+            dots: false,
+            arrows: true,
+        });
+    </script>
+</body>
+
+</html>

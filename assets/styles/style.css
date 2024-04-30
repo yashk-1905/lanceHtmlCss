@@ -1,0 +1,90 @@
+@import url('./font.css');
+@import url('./banner.css');
+@import url('./cards/card-medicine.css');
+@import url('./button.css');
+@import url('./sell.css');
+@import url('./cards/card-sell.css');
+@import url('./cards/card-package.css');
+@import url('./prescription.css');
+@import url('./media-slider.css');
+
+:root{
+    --headerBackground: #15A9A0;
+    --inputPlaceholder: #90A4AE;
+    --cardb1: #E5F3FF;
+    --cardb2: #E5E9FF;
+    --cardb3: #FFE5E5;
+    --cardb4: #EEE5FF;
+    --sectionBackground: #F8F8F8;
+    --buttonColor: #F26522;
+    --prescriptionColor: #46AEF7;
+    --prescriptionAltColor: #4BB5FF;
+    --stepBadge: #EEC45E;
+}
+*,
+&::before,
+&::after {
+	box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Albert Sans';
+}
+
+ul,
+ol,
+p,
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container,
+[class*="__container"] {
+	max-width: 1320px;
+	width: 100%;
+	margin: 0 auto !important;
+	padding: 0 20px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+}
+h1{
+    font-size: 52px;
+    opacity: 0.89;
+}
+h2{
+    font-size: 36px;
+}
+h3{
+    color: #000;
+    font-size: 32px;
+}
+p{
+    opacity: 0.6;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.medicine__cards{
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    margin-top: -34px;
+}
+
+.top__head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
